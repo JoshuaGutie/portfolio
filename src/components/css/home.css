@@ -1,0 +1,40 @@
+.homeContainer {
+    background-color: #141B1F;
+    height: 900px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.textContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: fit-content;
+    margin:10vh auto 5vh auto;
+}
+
+.hello {
+    color:#D6AA32;
+    font-size: 4.5em;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    width: fit-content;
+}
+
+.name {
+    color:#FFFF;
+    font-size: 6em;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin: 0px;
+    width: fit-content;
+    margin: 5px 0 20px 0;
+}
+
+.desc {
+    color:#D6AA32;
+    font-size: 2em;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin: 0px;
+    width: 70vw;
+    text-align: left;
+}
