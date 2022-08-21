@@ -1,6 +1,6 @@
 .homeContainer {
     background-color: #141B1F;
-    height: 900px;
+    height:90vh;
     width: 100vw;
     display: flex;
     justify-content: center;
@@ -17,7 +17,7 @@
 .hello {
     color:#D6AA32;
     font-size: 4.5em;
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-family:'Courier New', Courier, monospace;
     width: fit-content;
 }
 
@@ -33,7 +33,7 @@
 .desc {
     color:#D6AA32;
     font-size: 2em;
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-family:'Courier New', Courier, monospace;
     margin: 0px;
     width: 70vw;
     text-align: left;

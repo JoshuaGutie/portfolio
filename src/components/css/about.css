@@ -1,0 +1,39 @@
+.aboutContainer {
+    display: flex;
+    height: 70vh;
+    width: 100vw;
+    justify-content: space-evenly;
+    margin-top: 300px;
+}
+
+.gitImg {
+    width:400p; 
+    height:473.99px;
+}
+
+.bolded {
+    color: #D6AA32;
+    font-size: 2em;
+}
+
+.h2style {
+    font-size: 4em;
+    color: #FFFF;
+    width: fit-content;
+    margin-top: 0px;
+}
+
+.text {
+    font-family:'Courier New', Courier, monospace;
+}
+
+.aboutInfo {
+    width: 40vw;
+}
+.abText {
+    color:#FFDF88 ;
+    font-size: 1.5em;
+    margin-bottom: 50px;
+text-align: left;
+}
+

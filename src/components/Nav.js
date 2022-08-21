@@ -38,7 +38,7 @@ function Logo() {
       delay: 1000,
     })
   
-    return <a.div style={props} className="jay"><img src={jay} /></a.div>
+    return <a.div style={props}className="jay"><img src={jay} /></a.div>
 }
 
 function Nav() {
