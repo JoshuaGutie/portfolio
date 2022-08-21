@@ -1,6 +1,6 @@
 .aboutContainer {
     display: flex;
-    height: 70vh;
+    height: auto;
     width: 100vw;
     justify-content: space-evenly;
     margin-top: 300px;
@@ -17,8 +17,8 @@
 }
 
 .h2style {
-    font-size: 4em;
-    color: #FFFF;
+    font-size: 4em !important;
+    color: #FFFF !important;
     width: fit-content;
     margin-top: 0px;
 }
@@ -37,3 +37,34 @@
 text-align: left;
 }
 
+
+@media only screen and (max-width: 800px) {
+.aboutContainer{
+    flex-direction: column;
+    max-width: 100%;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+}
+.h2style{
+    margin:0px;
+}
+
+.abText {
+    margin: auto auto  45px auto ;
+}
+
+.aboutInfo {
+    width: 80vw;
+    margin: auto;
+}
+
+.gitImg {
+    width: 275px;
+    height: 325.87px;
+    margin: auto;
+    max-width: 100%;
+}
+}

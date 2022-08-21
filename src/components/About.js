@@ -3,7 +3,6 @@ import { animated as a, useSpring } from "react-spring";
 import "./css/about.css";
 import gitPhoto from "./img/gitPhoto.png";
 
-
 function useIntersectionObserver(
   elementRef,
   { threshold = 0, root = null, rootMargin = "0%", freezeOnceVisible = false }
@@ -51,7 +50,7 @@ export default function About() {
 
   const moreStyle = useSpring({
     config: { duration: 1000 },
-    delay:800,
+    delay: 800,
     from: { opacity: 0, y: -50 },
     to: {
       opacity: dataRef?.isIntersecting ? 1 : 0,
@@ -63,9 +62,11 @@ export default function About() {
 
   return (
     <div className="aboutContainer">
+      {/* div is used as a prop to freeze intersection observer */}
+      <div ref={triggerRef} />
       <div className="about">
         <div className="aboutTitle">
-          <a.h2 style={textStyle} className="h2style text">
+          <a.h2 style={textStyle} className="h2style text abText">
             About me
           </a.h2>
         </div>
@@ -88,11 +89,8 @@ export default function About() {
           </a.p>
           {/*INSERT LIST HERE TO USE TRANSITION SPRINGJS */}
         </div>
-        {/* div is used as a prop to freeze intersection observer */}
-        <div ref={triggerRef} />
       </div>
       <a.img className="gitImg" style={moreStyle} src={gitPhoto} alt="git" />
-      <div ref={triggerRef} />
     </div>
   );
 }

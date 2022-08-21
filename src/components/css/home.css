@@ -1,7 +1,8 @@
 .homeContainer {
     background-color: #141B1F;
-    height:90vh;
+    height:auto;
     width: 100vw;
+    max-width: 100%;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -10,7 +11,7 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    width: fit-content;
+    width:80vw ;
     margin:10vh auto 5vh auto;
 }
 
@@ -38,3 +39,31 @@
     width: 70vw;
     text-align: left;
 }
+
+@media only screen and (max-width: 800px) {
+    .textContainer {
+        width: 80vw;
+    }
+
+
+    .hello {
+        font-size: 3em;
+        width: 80vw;
+    }
+    .about {
+        width: 90vw;
+    }
+
+    .name{
+        font-size: 3em;
+        text-align: left;
+        width: 100vw;
+        max-width: 100%;
+    }
+
+    .desc {
+        width: 80vw;
+        font-size: 1.8em;
+    }
+}
+
