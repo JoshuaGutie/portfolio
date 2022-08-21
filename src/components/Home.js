@@ -1,5 +1,6 @@
 import "./css/home.css";
 import { useSpring, animated as a} from 'react-spring'
+import AnimatedLogo from "./AnimatedLogo";
 
 function SVG() {
     const { x } = useSpring({
@@ -72,7 +73,7 @@ function Home() {
         <FadeJosh/>
         <FadeDesc />
       </div>
-      <SVG />
+      <AnimatedLogo />
     </div>
   );
 }

@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { animated as a, useSpring } from "react-spring";
+import { animated as a, useSpring, useTrail } from "react-spring";
 import "./css/about.css";
 import gitPhoto from "./img/gitPhoto.png";
 
@@ -48,6 +48,7 @@ export default function About() {
     },
   });
 
+
   const moreStyle = useSpring({
     config: { duration: 1000 },
     delay: 800,
@@ -55,6 +56,16 @@ export default function About() {
     to: {
       opacity: dataRef?.isIntersecting ? 1 : 0,
       y: dataRef?.isIntersecting ? 0 : -50,
+    },
+  });
+
+  const listStyle = useSpring({
+    config: { duration: 500 },
+    delay: 1500,
+    from: { opacity: 0, y: 50 },
+    to: {
+      opacity: dataRef?.isIntersecting ? 1 : 0,
+      y: dataRef?.isIntersecting ? 0 : 50,
     },
   });
 
@@ -80,14 +91,21 @@ export default function About() {
           </a.p>
           <a.p style={moreStyle} className="text abText">
             Over the past 3 years I have collaborated with multiple junior
-            developers, contributed to an open source project, completed a
-            hackathon, worked alongside clients,in addition to cloning and
-            creating 38 GitHub repositories.
+            developers, <a className="bold underlined" href="https://github.com/JoshuaGutie?achievement=arctic-code-vault-contributor&tab=achievements">contributed to an open source project,</a> <a className="bold underlined" href="https://github.com/JoshuaGutie/NewsFeed">completed a
+            hackathon,</a> worked alongside clients,in addition to <a href="https://github.com/JoshuaGutie" className="bold underlined"> cloning and
+            creating 38 GitHub repositories.</a>
           </a.p>
           <a.p style={moreStyle} className="text abText">
             I have the most expieience in
           </a.p>
-          {/*INSERT LIST HERE TO USE TRANSITION SPRINGJS */}
+        <a.ul style={listStyle} className="list">
+          <li className="text abText">Javascript(ES6+)</li>
+          <li className="text abText">React</li>
+          <li className="text abText">HTML</li>
+          <li className="text abText">CSS</li>
+          <li className="text abText">Node.js</li>
+          <li className="text abText">SQL</li>
+        </a.ul>
         </div>
       </div>
       <a.img className="gitImg" style={moreStyle} src={gitPhoto} alt="git" />

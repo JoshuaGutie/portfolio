@@ -14,6 +14,10 @@
     margin-right: 30px;
 }
 
+.mobileJay{
+    display: none;
+}
+
 .jay {
     display: flex;
 }
@@ -65,5 +69,13 @@
         justify-content: space-between;
         box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;    z-index: 9999;
         margin-bottom: 20px;
+    }
+    .mobileJay{
+        display: flex;
+    }
+    .mobileJay img {
+        height: 80px;
+        width: 80px;
+        margin: auto;
     }
 }
