@@ -6,6 +6,7 @@ import jay from "./img/jay.svg"
 import MenuIcon from "@mui/icons-material/Menu";
 import Fab from "@mui/material/Fab";
 import {Link} from 'react-scroll'
+import Pdf from "./Resume.pdf"
 
 
 
@@ -54,6 +55,7 @@ class MobileNav extends Component {
         {this.state.isShow && (
           <div className="mobileLinks">
             <ul style={{display: 'flex', listStyle: 'none', justifyContent: 'space-around'}}>
+            <a href={Pdf} target="_blank" >Resume</a>
           <li><Link activeClass="active" to="home" spy={true} smooth={true} onClick={this.createText}>About</Link></li>
           <li><Link  to="projects" spy={true} smooth={true} onClick={this.createText}>Projects</Link></li>
           <li><Link  to="contact" spy={true} smooth={true} onClick={this.createText}>Contact</Link></li>

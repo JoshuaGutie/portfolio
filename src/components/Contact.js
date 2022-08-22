@@ -2,6 +2,7 @@ import "./css/about.css";
 
 function Contact() {
   return (
+    <div className="superContainer">
     <div className="contactContainer">
       <h3
         className="bold"
@@ -45,6 +46,7 @@ function Contact() {
           GitHub
         </a>
       </div>
+    </div>
     </div>
   );
 }

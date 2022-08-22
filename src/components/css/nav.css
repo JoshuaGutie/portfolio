@@ -12,8 +12,10 @@
 
 .links{
     display: flex;
+    justify-content: space-around;
     margin-right: 30px;
 }
+
 
 .mobileJay{
     display: none;
@@ -28,7 +30,20 @@
     margin: auto;
 }
 
+.links a {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    width: min-content;
+    color: #D6AA32;
+    height: fit-content;
+    text-decoration: none;
+    margin: auto auto auto auto;
+}
+
+
 .links li {
+    margin: auto;
     cursor: pointer;
     display: inline-block;
     position: relative;
@@ -36,26 +51,9 @@
     color: #D6AA32;
     font-size: 2.0em;
     height: fit-content;
+    width: min-content;
     text-decoration: none;
-    margin: auto 30px auto 0;
-}
-
-.links li:after {
-    content: "";
-  position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: #D6AA32;
-  transform-origin: bottom right;
-  transition: transform 0.25s ease-out;
-}
-
-.links li:hover:after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
+    margin-right: 40px;
 }
 
 .mobileNav {
@@ -97,6 +95,7 @@
 
     .mobileLinks {
         display: flex;
+        flex-direction: column;
         position: fixed;
         justify-content: flex-start;
         width: 100vw;
@@ -114,13 +113,17 @@
         padding: 0px;
         height: fit-content;
     }
+    .mobileLinks li{
+        margin: 30px auto 20px auto;
 
-    .mobileLinks li {
+    }
+    .mobileLinks a{
+        text-decoration: none;
         cursor: pointer;
         color:#D6AA32 ;
-        font-size: 2em;
+        font-size: 3em;
         height: min-content;
-        margin: 30px auto auto auto;
+        margin: 30px auto 20px auto;
     }
     .mobileJay{
         display: flex;
