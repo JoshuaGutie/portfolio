@@ -8,18 +8,22 @@
   max-width: 100%;
 }
 
-
-
 .about {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 200px;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 200px;
 }
 .gitImg {
-    width: 400px;
-    height: 473.99px;
-    order: 1;
-  }
+  width: 400px;
+  height: 473.99px;
+  order: 1;
+}
+
+.gitImg img {
+  width: 360px;
+  height: 426.99px;
+  order: 1;
+}
 
 .bold {
   font-size: 1.5rem;
@@ -89,7 +93,7 @@
 .projectsContainer {
   display: flex;
   margin: auto;
-  padding-top:150px ;
+  padding-top: 150px;
   flex-direction: column;
   width: fit-content;
   height: fit-content;
@@ -100,19 +104,23 @@
   position: relative;
   height: 525px;
   width: 900px;
-  opacity: .33;
-  transition:500ms ease-in-out;
-
+  opacity: 0.33;
+  transition: 500ms ease-in-out;
 }
 
 .projectImg:hover {
-    opacity: .7;
-    width: 50%;
-    height: 50%;
+  opacity: 0.7;
+  width: 50%;
+  height: 50%;
 }
 
 .projectsText {
+  display: flex;
+  flex-direction: column;
   width: 35vw;
+  justify-content: center;
+  max-width: 100%;
+
 }
 .projectsBox {
   display: flex;
@@ -128,16 +136,16 @@
   margin-left: 10px;
 }
 .linkImgs {
-    display: flex;
-    justify-content: space-around;
-    position: relative;
-    right: 5vw;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  right: 5vw;
 }
 .linkImgsRight {
-    display: flex;
-    justify-content: space-around;
-    position: relative;
-    left: 5vw;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  left: 5vw;
 }
 
 .projects {
@@ -151,7 +159,7 @@
 }
 
 .projectsTextRight h3 {
-    left: 5vw;
+  left: 5vw;
 }
 .projectsBoxRight {
   display: flex;
@@ -167,35 +175,110 @@
 .gitLink {
   width: 40px;
   height: 42px;
-  margin: auto 0 auto 0
+  margin: auto 0 auto 0;
 }
 
 .contactContainer {
-    display: flex;
-    flex-direction: column;
-    width: 45vw;
-    height: fit-content;
-    margin: 100px auto auto auto;
-    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
-    margin: auto;
-justify-content: center;
+  display: flex;
+  flex-direction: column;
+  width: 45vw;
+  height: fit-content;
+  margin: 100px auto auto auto;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  margin: auto;
+  justify-content: center;
 }
 .superContainer {
-    width: 100vw;
-    display: flex;
-    max-width: 100%;
-    height: auto;
-    background-color: #141b1f;
+  width: 100vw;
+  display: flex;
+  max-width: 100%;
+  height: auto;
+  background-color: #141b1f;
 }
 
-
-
 @media only screen and (max-width: 1400px) {
+  .projectsContainer {
+    width: 100vw;
+    max-width: 100%;
+  }
+
+  .h2style {
+    font-size: 2em !important;
+  }
+
+  .projectsText {
+    width: 100vw !important;
+    margin: auto;
+    justify-content: center;
+    max-width: 100%;
+  }
+
+  .projectsText a {
+    font-size: 2em !important;
+    align-self: center;
+  }
+  .gitImg {
+    width: 275px;
+    height: 300.87px;
+    margin: auto;
+    max-width: 100%;
+  }
+
+  .projectImg {
+    height: 420px;
+    width: 720px;
+    margin: auto;
+    max-width: 100%;
+
+  }
+
+  .projectImg:hover {
+    opacity: 0.7;
+    width: 75%;
+    height: 75%;
+    max-width: 100%;
+  }
+
+  .projects {
+    flex-direction: column;
+    max-width: 99%;
+  }
+
+  .projectsBox {
+    width: 80vw;
+    right: 0vw;
+    margin: auto;
+    max-width: 100%;
+    margin-left: 10vw;
+  }
+  .projectsBoxRight {
+    width: 80vw !important;
+    margin: auto;
+    margin-left: 5vw;
+    max-width: 100%;
+
+  }
+
+  .projectsTextRight {
+    width: 100vw !important;
+    order: 2;
+    max-width: 100%;
+
+  }
+}
+
+@media only screen and (max-width: 800px) {
   .aboutContainer {
     height: fit-content;
     flex-direction: column;
     margin-top: 0px;
     max-width: 100%;
+  }
+
+  .gitImg img {
+    width: 252px;
+    height: 324px;
+    order: 1;
   }
   .list {
     columns: 1;
@@ -227,26 +310,27 @@ justify-content: center;
     max-width: 100%;
   }
 
-  .projectsTitle{
+  .projectsTitle {
     flex-direction: column;
     margin-top: 30px;
+    max-width: 100%;
+
   }
-  .gitLink{
+  .gitLink {
     margin: auto;
   }
 
-  .projectImg{
+  .projectImg {
     width: 300px;
     height: 175px;
     margin: auto;
   }
 
   .projectImg:hover {
-    opacity: .7;
+    opacity: 0.7;
     width: 300px;
     height: 175px;
-}
-
+  }
 
   .projects {
     flex-direction: column;
@@ -255,15 +339,14 @@ justify-content: center;
 
   .projectsText {
     width: 90vw;
-    margin: auto;
   }
- 
+
   .projectsTextRight {
     width: 90vw;
     margin: auto;
     order: 2;
   }
-  
+
   .projectsTextRight a {
     width: min-content;
   }
@@ -274,9 +357,9 @@ justify-content: center;
   .projectsBoxRight {
     left: 0vw;
   }
-  
+
   .projectsBox {
-    right: 0vw;
+    margin: auto;
   }
 
   .linkImgsRight {
@@ -284,9 +367,9 @@ justify-content: center;
   }
   .projectsTextRight h3 {
     left: 0vw;
-}
-.contactContainer {
+  }
+  .contactContainer {
     width: 80vw;
-    margin:  auto  auto;
-}
+    margin: auto auto;
+  }
 }

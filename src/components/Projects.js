@@ -95,6 +95,7 @@ export default function Projects() {
               fontSize: "2.5em",
               margin: "0px",
               position: "relative",
+
             }}
           >
             MyFlexibleFoods
@@ -155,7 +156,7 @@ export default function Projects() {
 
       <a.div style={textStyle} className="projects">
         <img src={ecom} className="projectImg" alt="ecom" />/
-        <div className="projectsTextRight">
+        <div className="projectsText">
           <a
           href="https://sullivan-ministries.vercel.app/" rel="noreferrer" target="_blank"
             className="bold underlined"
