@@ -92,7 +92,7 @@ export default function About() {
           </a.p>
           <a.p style={moreStyle} className="text abText">
             Over the past 3 years I have collaborated with multiple junior
-            developers, <a className="bold underlined" href="https://github.com/JoshuaGutie?achievement=arctic-code-vault-contributor&tab=achievements">contributed to an open source project,</a> <a className="bold underlined" href="https://github.com/JoshuaGutie/NewsFeed">completed a
+            developers, <a className="bold underlined" href="https://github.com/JoshuaGutie/411_wk6_day1_redux_thunk">worked with Redux,</a> <a className="bold underlined" href="https://github.com/JoshuaGutie/NewsFeed">completed a
             hackathon,</a> worked alongside clients,in addition to <a href="https://github.com/JoshuaGutie" className="bold underlined"> cloning and
             creating 38 GitHub repositories.</a>
           </a.p>
