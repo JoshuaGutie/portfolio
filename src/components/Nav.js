@@ -22,9 +22,6 @@ function Links() {
           justifyContent: "space-around",
         }}
       >
-        <a className="underlined" href={Pdf} target="_blank" style={{fontSize:"2em", margin:"auto 30px auto auto"}}>
-          Resume
-        </a>
 
         <li className="underlined" >
           <Link  to="home" spy={true} smooth={true}>
@@ -46,6 +43,9 @@ function Links() {
             Contact
           </Link>
         </li>
+        <a className="underlined" href={Pdf} target="_blank" style={{fontSize:"2em", margin:"auto 30px auto auto"}}>
+          Resume
+        </a>
       </ul>
     </a.div>
   );

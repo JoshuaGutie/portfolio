@@ -2,7 +2,7 @@ import "./css/about.css";
 
 function Contact() {
   return (
-    <div className="superContainer">
+    <div className="superContainer" id="contact">
     <div className="contactContainer">
       <h3
         className="bold"
