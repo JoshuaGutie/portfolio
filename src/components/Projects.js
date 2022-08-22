@@ -133,11 +133,9 @@ export default function Projects() {
           </h3>
           <div className="projectsBoxRight">
             <p className="text abText projectInfo">
-              A multi-functional 3-1 food management and recipes application.
-              Designed to make meal planning and nutrition easy.
-            </p>
+            A static web page designed and created alongside Arbiter Roofing LLC. Automated Emailing system implemented using Email.js            </p>
             <p className="bold projectInfo" style={{ textAlign: "left" }}>
-              React -- Express -- Spoonacular API -- Spring JS
+              React -- Express -- Email.js -- Spring JS
             </p>
           </div>
           <div className="linkImgsRight">
