@@ -72,7 +72,7 @@ export default function About() {
   console.log(dataRef);
 
   return (
-    <div className="aboutContainer">
+    <div className="aboutContainer" id="home">
       {/* div is used as a prop to freeze intersection observer */}
       <div ref={triggerRef} />
       <div className="about">

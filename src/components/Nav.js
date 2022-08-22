@@ -1,6 +1,7 @@
 import "./css/nav.css";
 import { Button } from "@mui/material";
 import { useSpring, animated as a} from 'react-spring'
+import {Link} from 'react-scroll'
 import jay from "./img/jay.svg"
 
 
@@ -13,9 +14,13 @@ function Links() {
   })
 
   return <a.div style={props} className="links">
-        <a href="https://github.com/JoshuaGutie?tab=repositories">About</a>
-        <a href="https://github.com/JoshuaGutie?tab=repositories">Projects</a>
-        <a href="https://github.com/JoshuaGutie?tab=repositories">Contact</a>
+            <ul style={{display: 'flex', listStyle: 'none', justifyContent: 'space-around'}}>
+          <li><Link activeClass="active" to="home" spy={true} smooth={true}>About</Link></li>
+          <li><Link  to="projects" spy={true} smooth={true}>Projects</Link></li>
+          <li><Link  to="contact" spy={true} smooth={true}>Contact</Link></li>
+
+
+            </ul>
         <Button
           sx={{
             height:"45px",

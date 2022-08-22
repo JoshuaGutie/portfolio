@@ -11,7 +11,7 @@ function App() {
       <div className='container'>
      <Nav />
      <MobileNav/>
-     <Home />
+     <Home/>
      <About />
      <Projects />
      </div>

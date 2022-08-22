@@ -56,10 +56,20 @@ export default function Projects() {
   const textStyleRight = useSpring({
     delay: 500,
     config: { duration: 1000, friction: 1000 },
-    from: { opacity: -5, x: 250 },
+    from: { opacity: 0, x: -250 },
     to: {
       opacity: dataRef?.isIntersecting ? 1 : 0,
-      x: dataRef?.isIntersecting ? -5 : 250,
+      x: dataRef?.isIntersecting ? 0 : -250,
+    },
+  });
+
+  const textStyleLast = useSpring({
+    delay: 800,
+    config: { duration: 1000, friction: 1000 },
+    from: { opacity: 0, x: -250 },
+    to: {
+      opacity: dataRef?.isIntersecting ? 1 : 0,
+      x: dataRef?.isIntersecting ? 0 : -250,
     },
   });
 
@@ -67,16 +77,85 @@ export default function Projects() {
 
   return (
     <div className="projectsContainer">
-      <div ref={triggerRef} />
-      <div className="projectsTitle">
+      <div className="projectsTitle" id="projects">
         <img src={Vector} className="gitLink" alt="ecom" />/
         <h2 style={{ margin: "auto 0 auto 0" }} className=" h2style text">
           Projects
         </h2>
       </div>
+      
+      <div ref={triggerRef} />
+      <a.div style={textStyleRight} className="projects">
+      <img src={flexible} className="projectImg" alt="ecom" />/
+        <div className="projectsText">
+          <h3
+            className="bold"
+            style={{
+              fontSize: "2.5em",
+              margin: "0px",
+              position: "relative",
+            }}
+          >
+            MyFlexibleFoods
+          </h3>
+          <div className="projectsBox">
+            <p className="text abText projectInfo">
+              A multi-functional 3-1 food management and recipes application.
+              Designed to make meal planning and nutrition easy!
+            </p>
+            <p className="bold projectInfo" style={{ textAlign: "left" }}>
+              React -- Express -- Spoonacular API -- Spring JS
+            </p>
+          </div>
+          <div className="linkImgs">
+          <a href="https://github.com/JoshuaGutie/flexible-foods" target="_blank" rel="noreferrer">
+            <img alt="Git" src={Vector} />
+          </a>
+          <a href="https://www.myflexiblefoods.com/" target="_blank" rel="noreferrer">
+            <img alt="Git" src={web} style={{width:"50px", height:"50px"}} />
+          </a>
+          </div>
+        </div>
+      </a.div>
+
+      <a.div style={textStyleLast} className="projects">
+        <div className="projectsTextRight">
+          <h3
+            className="bold"
+            style={{
+              fontSize: "2.5em",
+              margin: "0px",
+              position: "relative",
+              right: "5vw",
+            }}
+          >
+            Arbiter Roofing
+          </h3>
+          <div className="projectsBoxRight">
+            <p className="text abText projectInfo">
+              A multi-functional 3-1 food management and recipes application.
+              Designed to make meal planning and nutrition easy.
+            </p>
+            <p className="bold projectInfo" style={{ textAlign: "left" }}>
+              React -- Express -- Spoonacular API -- Spring JS
+            </p>
+          </div>
+          <div className="linkImgsRight">
+          <a href="https://github.com/JoshuaGutie/reliable" rel="noreferrer" target="_blank">
+            <img alt="Git" src={Vector} />
+          </a>
+          <a href="https://arbiterroofing.com/" target="_blank" rel="noreferrer">
+            <img alt="Git" src={web} style={{width:"50px", height:"50px"}} />
+          </a>
+          </div>
+        </div>
+        <img src={arbitor} className="projectImg" alt="ecom" />/
+
+      </a.div>
+
       <a.div style={textStyle} className="projects">
         <img src={ecom} className="projectImg" alt="ecom" />/
-        <div className="projectsText">
+        <div className="projectsTextRight">
           <h3
             className="bold"
             style={{
@@ -90,7 +169,7 @@ export default function Projects() {
           </h3>
           <div className="projectsBox">
             <p className="text abText projectInfo">
-              (--in progress--) A dynamic Ecommerce shop, designed and created
+              (--in progress--) A funcitonal and secure dynamic Ecommerce shop, designed and created
               alongside freelance client.
             </p>
             <p className="bold projectInfo" style={{ textAlign: "left" }}>
@@ -98,77 +177,10 @@ export default function Projects() {
             </p>
           </div>
           <div className="linkImgs">
-          <a href="https://github.com/JoshuaGutie/commerce" target="_blank">
+          <a href="https://github.com/JoshuaGutie/commerce" rel="noreferrer" target="_blank">
             <img alt="Git" src={Vector} />
           </a>
-          <a href="https://sullivan-ministries.vercel.app/" target="_blank">
-            <img alt="Git" src={web} style={{width:"50px", height:"50px"}} />
-          </a>
-          </div>
-        </div>
-      </a.div>
-
-      <a.div style={textStyleRight} className="projects">
-        <div className="projectsTextRight">
-          <h3
-            className="bold"
-            style={{
-              fontSize: "2.5em",
-              margin: "0px",
-              position: "relative",
-            }}
-          >
-            MyFlexibleFoods
-          </h3>
-          <div className="projectsBoxRight">
-            <p className="text abText projectInfo">
-              A multi-functional 3-1 food management and recipes application.
-              Designed to make meal planning and nutrition easy!
-            </p>
-            <p className="bold projectInfo" style={{ textAlign: "left" }}>
-              React Express Spoonacular API Spring JS
-            </p>
-          </div>
-          <div className="linkImgsRight">
-          <a href="https://github.com/JoshuaGutie/flexible-foods" target="_blank">
-            <img alt="Git" src={Vector} />
-          </a>
-          <a href="https://www.myflexiblefoods.com/" target="_blank">
-            <img alt="Git" src={web} style={{width:"50px", height:"50px"}} />
-          </a>
-          </div>
-        </div>
-        <img src={flexible} className="projectImg" alt="ecom" />/
-      </a.div>
-
-      <a.div style={textStyle} className="projects">
-        <img src={arbitor} className="projectImg" alt="ecom" />/
-        <div className="projectsText">
-          <h3
-            className="bold"
-            style={{
-              fontSize: "2.5em",
-              margin: "0px",
-              position: "relative",
-              right: "5vw",
-            }}
-          >
-            Arbiter Roofing
-          </h3>
-          <div className="projectsBox">
-            <p className="text abText projectInfo">
-              A multi-functional 3-1 food management and recipes application.
-              Designed to make meal planning and nutrition easy.
-            </p>
-            <p className="bold projectInfo" style={{ textAlign: "left" }}>
-              React -- Express -- Spoonacular API -- Spring JS
-            </p>
-          </div>
-          <div className="linkImgs">
-          <a href="https://github.com/JoshuaGutie/reliable" target="_blank">
-            <img alt="Git" src={Vector} />
-          </a>
-          <a href="https://arbiterroofing.com/" target="_blank">
+          <a href="https://sullivan-ministries.vercel.app/" rel="noreferrer" target="_blank">
             <img alt="Git" src={web} style={{width:"50px", height:"50px"}} />
           </a>
           </div>

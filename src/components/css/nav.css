@@ -1,5 +1,6 @@
 .navContainer {
     display: flex;
+    position: fixed;
     width: 100vw;
     max-width: 100%;
     height:100px ;
@@ -27,7 +28,8 @@
     margin: auto;
 }
 
-.links a {
+.links li {
+    cursor: pointer;
     display: inline-block;
     position: relative;
     width: min-content;
@@ -38,7 +40,7 @@
     margin: auto 30px auto 0;
 }
 
-.links a:after {
+.links li:after {
     content: "";
   position: absolute;
   width: 100%;
@@ -51,18 +53,39 @@
   transition: transform 0.25s ease-out;
 }
 
-.links a:hover:after {
+.links li:hover:after {
     transform: scaleX(1);
     transform-origin: bottom left;
 }
 
+.mobileNav {
+    display: none;
+}
+.mobileLinks {
+    display: none;
+}
+
 @media only screen and (max-width: 1200px) {
+
+
     .navContainer{
         display: none;
     }
+    .mobileNav {
+        position:absolute;
+        width: 95vw;
+        display: flex;
+        height: 120px;
+        box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 1px 0px,
+          rgba(14, 30, 37, 0.32) 0px 2px 1px 0px;
+        justify-content: space-between;
+      }
+    
 
     .mobileNavContainer {
         display: flex;
+        position: fixed;
+        flex-direction: column;
         width: 100vw;
         max-width: 100%;
         height:100px ;
@@ -70,6 +93,34 @@
         justify-content: space-between;
         box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;    z-index: 9999;
         margin-bottom: 20px;
+    }
+
+    .mobileLinks {
+        display: flex;
+        position: fixed;
+        justify-content: flex-start;
+        width: 100vw;
+        height: 100vh;
+        flex-direction: row;
+        margin-top: 100px;
+        color: black;
+        background-color: #141B1F;
+    }
+
+    .mobileLinks ul {
+        display: flex;
+        flex-direction: column;
+        width: 90vw;
+        padding: 0px;
+        height: fit-content;
+    }
+
+    .mobileLinks li {
+        cursor: pointer;
+        color:#D6AA32 ;
+        font-size: 2em;
+        height: min-content;
+        margin: 30px auto auto auto;
     }
     .mobileJay{
         display: flex;
