@@ -1,13 +1,14 @@
 .aboutContainer {
   display: flex;
-  height: auto;
+  height: 80vh;
   width: 100vw;
   justify-content: space-evenly;
   margin-top: 300px;
+  max-width: 100%;
 }
 
 .gitImg {
-  width: 400p;
+  width: 400px;
   height: 473.99px;
 }
 
@@ -18,31 +19,17 @@
 }
 
 .underlined {
-    display: inline-block;
-    position: relative;
-    color: #D6AA32;
-    height: fit-content;
-    text-decoration: none;
-    margin: auto 30px auto 0;
+  text-decoration: none;
+  background-image: linear-gradient(#d6aa32, #d6aa32);
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-size: 0% 3px;
+  transition: background-size 500ms ease-in-out;
 }
 
-.underlined:after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: #D6AA32;
-    transform-origin: bottom right;
-    transition: transform 0.5s ease-out;
-}
-
-.underlined:hover:after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-
+.underlined:hover {
+  background-size: 100% 3px;
+  color: #d6aa32;
 }
 
 .list li {
@@ -80,6 +67,80 @@
   margin-bottom: 50px;
   text-align: left;
 }
+.projectsTitle {
+  width: fit-content;
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 40px;
+}
+
+.projectsContainer {
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  width: fit-content;
+}
+
+.projectImg {
+  height: 525px;
+  width: 900px;
+}
+.projectsText {
+  width: 35vw;
+}
+.projectsBox {
+  display: flex;
+  background-color: #141b1f;
+  position: relative;
+  right: 5vw;
+  flex-direction: column;
+  justify-content: left;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+.projectInfo {
+  width: fit-content;
+  margin-left: 10px;
+}
+.linkImgs {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    right: 5vw;
+}
+.linkImgsRight {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    left: 5vw;
+}
+
+.projects {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 85px;
+}
+
+.projectsTextRight {
+  width: 35vw;
+}
+
+.projectsBoxRight {
+  display: flex;
+  background-color: #141b1f;
+  position: relative;
+  left: 5vw;
+  flex-direction: column;
+  justify-content: left;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+.gitLink {
+  width: 40px;
+  height: 42px;
+  margin: auto 0 auto 0
+}
+
+
 
 @media only screen and (max-width: 800px) {
   .aboutContainer {

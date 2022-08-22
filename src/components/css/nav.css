@@ -30,6 +30,7 @@
 .links a {
     display: inline-block;
     position: relative;
+    width: min-content;
     color: #D6AA32;
     font-size: 2.0em;
     height: fit-content;
