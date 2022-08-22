@@ -164,11 +164,12 @@
     height: fit-content;
     margin: 100px auto auto auto;
     box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
-    margin: 0px;
-
+    margin: auto;
+justify-content: center;
 }
 .superContainer {
     width: 100vw;
+    display: flex;
     max-width: 100%;
     height: auto;
     background-color: #141b1f;
