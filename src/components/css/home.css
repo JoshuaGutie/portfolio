@@ -4,7 +4,7 @@
     width: 100vw;
     max-width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     flex-direction: column;
 }
 .textContainer {
@@ -44,16 +44,17 @@
 @media only screen and (max-width: 800px) {
     .textContainer {
         width: 80vw;
+        margin:35vh auto 35vh auto;
     }
 
     .homeContainer {
-        height: fit-content;
+        height: 1200px;
         justify-content: flex-start;
     }
 
 
     .hello {
-        font-size: 3em;
+        font-size: 2.5em;
         width: 80vw;
     }
     .about {
@@ -61,7 +62,7 @@
     }
 
     .name{
-        font-size: 3em;
+        font-size: 2.5em;
         text-align: left;
         width: 100vw;
         max-width: 100%;
@@ -69,7 +70,7 @@
 
     .desc {
         width: 80vw;
-        font-size: 1.8em;
+        font-size: 1.5em;
     }
 }
 

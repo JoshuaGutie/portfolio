@@ -15,7 +15,8 @@ function Links() {
 
   return <a.div style={props} className="links">
             <ul style={{display: 'flex', listStyle: 'none', justifyContent: 'space-around'}}>
-          <li><Link activeClass="active" to="home" spy={true} smooth={true}>About</Link></li>
+            <li><Link  to="home" spy={true} smooth={true}>Home</Link></li>
+          <li><Link activeClass="active" to="about" spy={true} smooth={true}>About</Link></li>
           <li><Link  to="projects" spy={true} smooth={true}>Projects</Link></li>
           <li><Link  to="contact" spy={true} smooth={true}>Contact</Link></li>
 

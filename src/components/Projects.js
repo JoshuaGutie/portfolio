@@ -45,7 +45,7 @@ export default function Projects() {
     freezeOnceVisible: true,
   });
   const textStyle = useSpring({
-    config: { duration: 1000, friction: 1000 },
+    config: { duration: 500, friction: 100 },
     from: { opacity: 0, x: -250 },
     to: {
       opacity: dataRef?.isIntersecting ? 1 : 0,
@@ -55,7 +55,7 @@ export default function Projects() {
 
   const textStyleRight = useSpring({
     delay: 500,
-    config: { duration: 1000, friction: 1000 },
+    config: { duration: 500, friction: 1, mass:100 },
     from: { opacity: 0, x: -250 },
     to: {
       opacity: dataRef?.isIntersecting ? 1 : 0,
@@ -65,7 +65,7 @@ export default function Projects() {
 
   const textStyleLast = useSpring({
     delay: 800,
-    config: { duration: 1000, friction: 1000 },
+    config: { duration: 500, friction: 1 },
     from: { opacity: 0, x: -250 },
     to: {
       opacity: dataRef?.isIntersecting ? 1 : 0,
@@ -76,8 +76,8 @@ export default function Projects() {
   console.log(dataRef);
 
   return (
-    <div className="projectsContainer">
-      <div className="projectsTitle" id="projects">
+    <div className="projectsContainer" id="projects">
+      <div className="projectsTitle">
         <img src={Vector} className="gitLink" alt="ecom" />/
         <h2 style={{ margin: "auto 0 auto 0" }} className=" h2style text">
           Projects
@@ -177,7 +177,7 @@ export default function Projects() {
             </p>
           </div>
           <div className="linkImgs">
-          <a href="https://github.com/JoshuaGutie/commerce" rel="noreferrer" target="_blank">
+          <a href="https://github.com/JoshuaGutie/sullivanMinistries" rel="noreferrer" target="_blank">
             <img alt="Git" src={Vector} />
           </a>
           <a href="https://sullivan-ministries.vercel.app/" rel="noreferrer" target="_blank">

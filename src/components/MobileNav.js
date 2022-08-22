@@ -17,7 +17,7 @@ function Logo() {
       delay: 1000,
     })
   
-    return <a.div style={props}className="mobileJay"><img src={jay} /></a.div>
+    return <a.div style={props}className="mobileJay"><img src={jay} style={{width:"60px", height:"60px"}} /></a.div>
 }
 
 class MobileNav extends Component {

@@ -7,7 +7,6 @@ function SVG() {
       from: { x: 0 },
       x: 1,
       delay: 500,
-      config:{friction:100},
       damping:1,
     });
    
@@ -34,7 +33,7 @@ function Hello() {
     const props = useSpring({
       to: { opacity: 1, x:0 },
       from: { opacity: 0, x:-250 },
-      config:{friction:56, bounce:100},
+      config:{friction:56, bounce:1, tension:250},
       delay: 500,
     })
  
@@ -45,7 +44,7 @@ function FadeJosh() {
     const props = useSpring({
       to: {opacity: 1, y:0 },
       from: { opacity: 0, y:20 },
-      config:{friction:50},
+      config:{friction:50, tension:250},
       delay: 800,
     })
     return  <a.h1 style={props} className="name">Joshua Gutierrez</a.h1>
@@ -56,7 +55,7 @@ function FadeDesc() {
     const props = useSpring({
       to: { opacity: 1, y:0 },
       from: { opacity: 0, y:20 },
-      config:{friction:50},
+      config:{friction:50, tension:250},
       delay: 1000,
     })
     return <a.span style={props} className="desc">
@@ -67,7 +66,7 @@ function FadeDesc() {
 
 function Home() {
   return (
-    <div className="homeContainer">
+    <div className="homeContainer" id="home">
       <div className="textContainer">
         <Hello />
         <FadeJosh/>

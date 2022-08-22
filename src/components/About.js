@@ -40,7 +40,7 @@ export default function About() {
     freezeOnceVisible: true,
   });
   const textStyle = useSpring({
-    config: { duration: 800, friction: 1000 },
+    config: { duration: 300, friction: 100 },
     from: { opacity: 0, y: -50 },
     to: {
       opacity: dataRef?.isIntersecting ? 1 : 0,
@@ -50,7 +50,7 @@ export default function About() {
 
 
   const moreStyle = useSpring({
-    config: { duration: 1000 },
+    config: { duration: 300 },
     delay: 800,
     from: { opacity: 0, y: -50 },
     to: {
@@ -60,7 +60,7 @@ export default function About() {
   });
 
   const listStyle = useSpring({
-    config: { duration: 500 },
+    config: { duration: 300 },
     delay: 1500,
     from: { opacity: 0, y: 50 },
     to: {
@@ -72,16 +72,17 @@ export default function About() {
   console.log(dataRef);
 
   return (
-    <div className="aboutContainer" id="home">
+    <div className="aboutContainer" id="about">
       {/* div is used as a prop to freeze intersection observer */}
       <div ref={triggerRef} />
       <div className="about">
+        
+        <div className="aboutInfo">
         <div className="aboutTitle">
           <a.h2 style={textStyle} className="h2style text abText">
             About me
           </a.h2>
         </div>
-        <div className="aboutInfo">
           <a.p style={moreStyle} className="text abText">
             Hello, my name is Josh and I have a passion for designing and
             creating projects to display on the internet. In 2019 at the age of
@@ -107,8 +108,8 @@ export default function About() {
           <li className="text abText">SQL</li>
         </a.ul>
         </div>
+        <div className="gitImg"><a.img style={moreStyle} src={gitPhoto} alt="git"  /></div>
       </div>
-      <a.img className="gitImg" style={moreStyle} src={gitPhoto} alt="git" />
     </div>
   );
 }
