@@ -46,6 +46,11 @@
         width: 80vw;
     }
 
+    .homeContainer {
+        height: fit-content;
+        justify-content: flex-start;
+    }
+
 
     .hello {
         font-size: 3em;

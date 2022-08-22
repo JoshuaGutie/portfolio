@@ -56,10 +56,10 @@ export default function Projects() {
   const textStyleRight = useSpring({
     delay: 500,
     config: { duration: 1000, friction: 1000 },
-    from: { opacity: 0, x: 250 },
+    from: { opacity: -5, x: 250 },
     to: {
       opacity: dataRef?.isIntersecting ? 1 : 0,
-      x: dataRef?.isIntersecting ? 0 : 250,
+      x: dataRef?.isIntersecting ? -5 : 250,
     },
   });
 
@@ -116,7 +116,6 @@ export default function Projects() {
               fontSize: "2.5em",
               margin: "0px",
               position: "relative",
-              left: "5vw",
             }}
           >
             MyFlexibleFoods

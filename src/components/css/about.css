@@ -78,7 +78,8 @@
   display: flex;
   margin: auto;
   flex-direction: column;
-  width: fit-content;
+  width: 100vw;
+  max-width: 100%;
 }
 
 .projectImg {
@@ -124,6 +125,9 @@
   width: 35vw;
 }
 
+.projectsTextRight h3 {
+    left: 5vw;
+}
 .projectsBoxRight {
   display: flex;
   background-color: #141b1f;
@@ -144,8 +148,14 @@
 
 @media only screen and (max-width: 800px) {
   .aboutContainer {
+    height: fit-content;
     flex-direction: column;
     max-width: 100%;
+  }
+  .list {
+    columns: 1;
+    -webkit-columns: 1;
+    -moz-columns: 1;
   }
 
   .about {
@@ -171,4 +181,48 @@
     margin: auto;
     max-width: 100%;
   }
+
+  .projectsTitle{
+    flex-direction: column;
+    margin-top: 30px;
+  }
+  .gitLink{
+    margin: auto;
+  }
+
+  .projectImg{
+    width: 300px;
+    height: 175px;
+    margin: auto;
+  }
+  .projects {
+    flex-direction: column;
+    max-width: 990%;
+  }
+
+  .projectsText {
+    width: 90vw;
+    margin: auto;
+  }
+ 
+  .projectsTextRight {
+    width: 90vw;
+    margin: auto;
+    order: 2;
+  }
+
+  .projectsBoxRight {
+    left: 0vw;
+  }
+  
+  .projectsBox {
+    right: 0vw;
+  }
+
+  .linkImgsRight {
+    left: 0vw;
+  }
+  .projectsTextRight h3 {
+    left: 0vw;
+}
 }
