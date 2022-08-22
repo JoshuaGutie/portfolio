@@ -92,8 +92,8 @@ export default function About() {
           </a.p>
           <a.p style={moreStyle} className="text abText">
             Over the past 3 years I have collaborated with multiple junior
-            developers, <a className="bold underlined" href="https://github.com/JoshuaGutie/411_wk6_day1_redux_thunk">worked with Redux,</a> <a className="bold underlined" href="https://github.com/JoshuaGutie/NewsFeed">completed a
-            hackathon,</a> worked alongside clients,in addition to <a href="https://github.com/JoshuaGutie" className="bold underlined"> cloning and
+            developers, <a className="bold underlined" href="https://github.com/JoshuaGutie/411_wk6_day1_redux_thunk" target="_blank" rel="noreferrer">worked with Redux, </a><a className="bold underlined" href="https://github.com/JoshuaGutie/311_wk3_day1_db_select" target="_blank" rel="noreferrer">Used SQL on Databases,</a> <a className="bold underlined" href="https://github.com/JoshuaGutie/NewsFeed" target="_blank" rel="noreferrer">completed a
+            hackathon,</a> worked alongside freelance clients,in addition to <a href="https://github.com/JoshuaGutie" className="bold underlined" target="_blank" rel="noreferrer"> cloning and
             creating 38 GitHub repositories.</a>
           </a.p>
           <a.p style={moreStyle} className="text abText">
