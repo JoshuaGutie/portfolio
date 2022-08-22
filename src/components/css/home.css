@@ -12,7 +12,7 @@
     justify-content: center;
     flex-direction: column;
     width:80vw ;
-    margin:10vh auto 5vh auto;
+    margin:15vh auto 5vh auto;
 }
 
 .hello {
@@ -44,7 +44,7 @@
 @media only screen and (max-width: 800px) {
     .textContainer {
         width: 80vw;
-        margin:35vh auto 35vh auto;
+        margin:20vh auto 20vh auto;
     }
 
     .homeContainer {
