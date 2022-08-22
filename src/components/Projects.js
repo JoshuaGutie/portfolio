@@ -88,8 +88,9 @@ export default function Projects() {
       <a.div style={textStyleRight} className="projects">
       <img src={flexible} className="projectImg" alt="ecom" />/
         <div className="projectsText">
-          <h3
-            className="bold"
+          <a
+            className="bold underlined"
+            href="https://www.myflexiblefoods.com/"
             style={{
               fontSize: "2.5em",
               margin: "0px",
@@ -97,7 +98,7 @@ export default function Projects() {
             }}
           >
             MyFlexibleFoods
-          </h3>
+          </a>
           <div className="projectsBox">
             <p className="text abText projectInfo">
               A multi-functional 3-1 food management and recipes application.
@@ -120,8 +121,9 @@ export default function Projects() {
 
       <a.div style={textStyleLast} className="projects">
         <div className="projectsTextRight">
-          <h3
-            className="bold"
+          <a
+            className="bold underlined"
+            href="https://arbiterroofing.com/"
             style={{
               fontSize: "2.5em",
               margin: "0px",
@@ -130,12 +132,12 @@ export default function Projects() {
             }}
           >
             Arbiter Roofing
-          </h3>
+          </a>
           <div className="projectsBoxRight">
             <p className="text abText projectInfo">
             A static web page designed and created alongside Arbiter Roofing LLC. Automated Emailing system implemented using Email.js            </p>
             <p className="bold projectInfo" style={{ textAlign: "left" }}>
-              React -- Express -- Email.js -- Spring JS
+              React -- Express --  -- Spring JS
             </p>
           </div>
           <div className="linkImgsRight">
@@ -154,17 +156,17 @@ export default function Projects() {
       <a.div style={textStyle} className="projects">
         <img src={ecom} className="projectImg" alt="ecom" />/
         <div className="projectsTextRight">
-          <h3
-            className="bold"
+          <a
+          href="https://sullivan-ministries.vercel.app/" rel="noreferrer" target="_blank"
+            className="bold underlined"
             style={{
-              fontSize: "2.5em",
-              margin: "0px",
-              position: "relative",
-              right: "5vw",
+                fontSize: "2.5em",
+                margin: "0px",
+                position: "relative",
             }}
           >
             Sullivan Ministries
-          </h3>
+          </a>
           <div className="projectsBox">
             <p className="text abText projectInfo">
               (--in progress--) A funcitonal and secure dynamic Ecommerce shop, designed and created

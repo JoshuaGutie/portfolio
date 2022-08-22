@@ -97,9 +97,20 @@
 }
 
 .projectImg {
+  position: relative;
   height: 525px;
   width: 900px;
+  opacity: .33;
+  transition:500ms ease-in-out;
+
 }
+
+.projectImg:hover {
+    opacity: .7;
+    width: 50%;
+    height: 50%;
+}
+
 .projectsText {
   width: 35vw;
 }
@@ -150,6 +161,7 @@
   flex-direction: column;
   justify-content: left;
   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  z-index: 100;
 }
 
 .gitLink {
@@ -228,6 +240,14 @@ justify-content: center;
     height: 175px;
     margin: auto;
   }
+
+  .projectImg:hover {
+    opacity: .7;
+    width: 300px;
+    height: 175px;
+}
+
+
   .projects {
     flex-direction: column;
     max-width: 99%;
@@ -242,6 +262,13 @@ justify-content: center;
     width: 90vw;
     margin: auto;
     order: 2;
+  }
+  
+  .projectsTextRight a {
+    width: min-content;
+  }
+  .projectsTextRight h2 {
+    width: min-content;
   }
 
   .projectsBoxRight {
