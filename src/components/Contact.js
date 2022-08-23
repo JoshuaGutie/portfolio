@@ -27,7 +27,7 @@ function Contact() {
           href="https://www.linkedin.com/in/joshua-gutierrez-588b1018a/"
           className="text abText"
         >
-          Linkin
+          Linkedin
         </a>
         <b className="bold"> / </b>
         <a

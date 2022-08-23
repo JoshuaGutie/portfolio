@@ -97,7 +97,7 @@ export default function About() {
             creating 38 GitHub repositories.</a>
           </a.p>
           <a.p style={moreStyle} className="text abText">
-            I have the most expirience in
+            I have the most experience in
           </a.p>
         <a.ul style={listStyle} className="list">
           <li className="text abText">Javascript(ES6+)</li>

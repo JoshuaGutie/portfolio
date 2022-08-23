@@ -61,7 +61,7 @@ function FadeDesc() {
     })
     return <a.span style={props} className="desc">
           I’m a self taught web-developer, specializing in designing and creating
-          Beautiful and accessible front end expiriences
+          Beautiful and accessible front end experiences
         </a.span>
 }
 

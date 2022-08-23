@@ -6,7 +6,7 @@ import jay from "./img/jay.svg"
 import MenuIcon from "@mui/icons-material/Menu";
 import Fab from "@mui/material/Fab";
 import {Link} from 'react-scroll'
-import Pdf from "./Resume.pdf"
+import Pdf from "./resume.pdf"
 
 
 

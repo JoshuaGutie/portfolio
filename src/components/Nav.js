@@ -3,7 +3,7 @@ import { Button } from "@mui/material";
 import { useSpring, animated as a } from "react-spring";
 import { Link } from "react-scroll";
 import jay from "./img/jay.svg";
-import Pdf from "./Resume.pdf";
+import Pdf from "./resume.pdf";
 
 function Links() {
   const props = useSpring({
