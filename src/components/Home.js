@@ -12,6 +12,7 @@ function SVG() {
    
     return (
       <a.svg
+        alt="jay"
         style={{ margin: "auto", width: 300, height: 300 }}
         viewBox="0 0 170 281" fill="none"
         strokeWidth="2"

@@ -61,7 +61,7 @@ function Logo() {
 
   return (
     <a.div style={props} className="jay">
-      <img src={jay} />
+      <img src={jay} alt="jay" />
     </a.div>
   );
 }
