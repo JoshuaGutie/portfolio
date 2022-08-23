@@ -59,7 +59,7 @@ function FadeDesc() {
       delay: 1000,
     })
     return <a.span style={props} className="desc">
-          I’m a self taught web developer, specializing in designing and creating
+          I’m a self taught web-developer, specializing in designing and creating
           Beautiful and accessible front end expiriences
         </a.span>
 }
